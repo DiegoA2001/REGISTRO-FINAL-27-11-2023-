@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 1800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select.dynamic-select {
+    width: 21%; /* Ajusta el ancho de los selectores generados dinámicamente */
+    padding: 8px; /* Aumenta el espacio interno */
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Asegura que ocupe el ancho completo */
+}
+
+/* Estilos para los campos de entrada del formulario */
+input[type="date"],
+textarea {
+    width: 70%; /* Ajusta el ancho de las casillas */
+    padding: 5px; /* Aumenta el espacio interno */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    margin: 0 auto; /* Centra horizontalmente los campos */
+    text-align: center; /* Centra el texto dentro de los campos */
+}
+input[type="text"],
+textarea {
+    width: 60%; /* Ajusta el ancho de las casillas */
+    padding: 5px; /* Aumenta el espacio interno */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    margin: 0 auto; /* Centra horizontalmente los campos */
+    text-align: center; /* Centra el texto dentro de los campos */
+}
+
+/* Estilos para el botón "Registrar Datos" del formulario */
+input[type="submit"] {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 50%);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s; /* Transición suave del efecto de zoom */
+}
+
+input[type="submit"]:hover {
+    background: #a9b8a9;
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+
+.add-client-link {
+    margin-right: -20px; /* Espacio entre el enlace y el select */
+}
+
+/* Estilos para el fondo */
+.background {
+    position: absolute;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los títulos */
+h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor del campo de búsqueda */
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Puedes ajustar el ancho según tu diseño */
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+.buscar {
+    width: calc(100% - 30px); /* Ajusta el ancho del campo, dejando espacio para el botón */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el icono de búsqueda */
+.search-icon {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 50%);
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Transición suave del efecto de zoom */
+}
+
+.search-icon:hover {
+    background: #a9b8a9;
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+
+/* Agrega estilos al botón "Generar PDF" */
+.export-buttons {
+    display: inline-block;
+    margin-bottom: 10px; /* Espacio hacia abajo entre los botones */
+}
+
+.generate-pdf {
+    /* Estilos específicos para el botón de Generar PDF */
+    background-color: rgb(255, 136, 0); /* Color de fondo azul para el botón de PDF */
+    color: white; /* Texto en color blanco */
+    padding: 5px 15px; /* Espaciado interno del botón */
+    font-size: 18px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    transition: transform 0.2s; /* Transición suave del efecto de zoom */
+}
+
+.generate-pdf:hover {
+    background-color: orange; /* Cambio de color al pasar el mouse */
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+/* Estilos para el fondo en dispositivos móviles y tabletas */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: #fff; /* Establecer el fondo blanco para el cuerpo */
+        margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+        padding: 0; /* Eliminar el padding predeterminado del cuerpo */
+    }
+    form {
+        background-color: #fff; /* Establecer el fondo blanco para el formulario */
+        max-width: 100%; /* Permitir que el formulario ocupe el ancho máximo disponible */
+        padding: 20px; /* Añadir padding al formulario en tabletas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al formulario en tabletas */
+        border-radius: 10px; /* Agregar borde redondeado al formulario en tabletas */
+    }
+    table {
+        width: 100%; /* Hacer que la tabla ocupe todo el ancho disponible */
+        margin: 0 auto; /* Centrar la tabla en tabletas */
+        border-collapse: collapse; /* Colapsar bordes de la tabla en tabletas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra a la tabla en tabletas */
+        border-radius: 10px; /* Agregar borde redondeado a la tabla en tabletas */
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 5px; /* Aumentar el padding de las celdas en tabletas */
+        text-align: center;
+        font-size: 12px; /* Reducir el tamaño de la fuente para las celdas en tabletas */
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+}
